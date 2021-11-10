@@ -38,7 +38,7 @@ You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages t
 
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
-<h3>Policy 1</h3>
+<h2>Policy 1</h2>
 
 Payloads
 
@@ -72,7 +72,7 @@ Description: *Jamf Connect* is a tool which helps keep your Mac password in sync
 Ensure that users view the description: Checked
 Icon: It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
 
-<h3>Policy 2</h3>
+<h2>Policy 2</h2>
 
 Payloads
 
@@ -95,7 +95,7 @@ Targets: Demobilize - Jamf Connect installed
 Exclusions: Demobilize - No Mobile Accounts
 
 
-<h3>Policy 3 (Demobilize only)</h3>
+<h2>Policy 3 (Demobilize only)</h2>
 
 Payloads
 
@@ -118,9 +118,9 @@ Scope
 Targets: All Computers
 
 
-<h3>Policy 3 (Demobilize & migrate)</h3>
+<h2>Policy 3 (Demobilize & migrate)</h2>
 
-Payloads
+<h4>Payloads</h4>
 
 General
 Name: Demobilize - Activate Jamf Connect Login
@@ -137,7 +137,7 @@ Scripts
 Script: Demobilize - Migrate
 Priority: After
 
-Scope
+<h4>Scope</h4>
 
 Targets: All Computers
 
