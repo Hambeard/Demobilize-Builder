@@ -114,6 +114,8 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 **Payloads**
 
+---
+
 **General**<br />
 **Name:** Demobilize - Reset login window<br />
 **Category:** Jamf Connect<br />
