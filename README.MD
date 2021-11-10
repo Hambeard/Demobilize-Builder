@@ -38,9 +38,10 @@ You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages t
 
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
+
 <h2>Policy 1</h2>
 
-Payloads
+**Payloads**
 
 General
 Name: Demobilize - Install Jamf Connect
@@ -59,12 +60,12 @@ Priority: After
 Files & Processes
 Execute Command: /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
 
-Scope
+**Scope**
 
 Targets: Demobilize - Jamf Connect not installed
 Exclusions: Demobilize - No Mobile Accounts
 
-Self Service
+**Self Service**
 
 Self Service Display Name: Jamf Connect
 Button Name: Install
@@ -74,7 +75,7 @@ Icon: It is highly recommended that you add an icon for the policy, the Jamf Con
 
 <h2>Policy 2</h2>
 
-Payloads
+**Payloads**
 
 General
 Name: Demobilize - Inventory update
@@ -89,7 +90,7 @@ Priority: After
 Maintenance
 Update Inventory: Checked
 
-Scope
+**Scope**
 
 Targets: Demobilize - Jamf Connect installed
 Exclusions: Demobilize - No Mobile Accounts
@@ -97,7 +98,7 @@ Exclusions: Demobilize - No Mobile Accounts
 
 <h2>Policy 3 (Demobilize only)</h2>
 
-Payloads
+**Payloads**
 
 General
 Name: Demobilize - Reset login window
@@ -113,15 +114,14 @@ Action: Install
 Files & Processes
 Execute Command: /usr/local/bin/authchanger -reset
 
-Scope
+**Scope**
 
 Targets: All Computers
 
 
 <h2>Policy 3 (Demobilize & migrate)</h2>
 
-
-*Payloads*
+**Payloads**
 
 General
 Name: Demobilize - Activate Jamf Connect Login
@@ -138,20 +138,19 @@ Scripts
 Script: Demobilize - Migrate
 Priority: After
 
-*Scope*
+**Scope**
 
 Targets: All Computers
 
 
-
 <h2>Appendix</h2>
 
-Settings changed in Jamf Pro
+**Settings changed in Jamf Pro**
 
 Login hooks enabled
 Check for policies at login enabled
 
-Objects created in Jamf Pro
+**Objects created in Jamf Pro**
 
 Jamf Connect Category
 Mobile Accounts Computer Extension Attribute
