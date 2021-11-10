@@ -41,13 +41,13 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 <h2>Policy 1</h2>
 
-**Payloads**
+<h3>Payloads</h3>
 
-General<br />
-Name: Demobilize - Install Jamf Connect<br />
-Category: Jamf Connect<br />
-Trigger: None<br />
-Frequency: Once per computer
+**General**<br />
+**Name:** Demobilize - Install Jamf Connect<br />
+**Category:** Jamf Connect<br />
+**Trigger:** None<br />
+**Frequency:** Once per computer
 
 Packages
 Package: JamfConnect.pkg<br />
@@ -67,11 +67,11 @@ Exclusions: Demobilize - No Mobile Accounts
 
 **Self Service**
 
-Self Service Display Name: Jamf Connect<br />
-Button Name: Install<br />
-Description: *Jamf Connect* is a tool which helps keep your Mac password in sync with your other company passwords. The installation requires you to log out and back in again, please make sure that you have saved your work before proceeding.<br />
-Ensure that users view the description: Checked<br />
-Icon: It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
+**Self Service Display Name:** Jamf Connect<br />
+**Button Name:** Install<br />
+**Description:** *Jamf Connect* is a tool which helps keep your Mac password in sync with your other company passwords. The installation requires you to log out and back in again, please make sure that you have saved your work before proceeding.<br />
+**Ensure that users view the description:** Checked<br />
+**Icon:** It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
 
 <h2>Policy 2</h2>
 
@@ -79,7 +79,7 @@ Icon: It is highly recommended that you add an icon for the policy, the Jamf Con
 
 General
 
-Name: Demobilize - Inventory update
+**Name:** Demobilize - Inventory update
 
 Category: Jamf Connect
 
