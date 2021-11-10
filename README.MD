@@ -62,7 +62,9 @@ Priority: After
 Files & Processes<br />
 Execute Command: /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
 
-**Scope**
+<h3>Scope</h3>
+
+---
 
 Targets: Demobilize - Jamf Connect not installed<br />
 Exclusions: Demobilize - No Mobile Accounts
