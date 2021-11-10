@@ -96,76 +96,64 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 **Priority:** After<br />
 
 **Maintenance**<br />
-Update Inventory: Checked
+**Update Inventory:** Checked
 
 <h3>Scope</h3>
 
---
+---
 
-Targets: Demobilize - Jamf Connect installed<br />
-Exclusions: Demobilize - No Mobile Accounts
+**Targets:** Demobilize - Jamf Connect installed<br />
+**Exclusions:** Demobilize - No Mobile Accounts
 
 
-<h2>Policy 3 (Demobilize only)</h2>
+<h1>Policy 3 (Demobilize only)</h1>
 
 **Payloads**
 
-General
+**General**<br />
+**Name:** Demobilize - Reset login window<br />
+**Category:** Jamf Connect<br />
+**Trigger:** Custom<br />
+**Custom Event:** demobilizeCustomTrigger (or custom value if set in Demobilize - Trigger parameter 4)<br />
+**Frequency:** Once per computer
 
-Name: Demobilize - Reset login window
+**Packages**<br />
+**Package:** JamfConnectLaunchAgent.pkg<br />
+**Action:** Install
 
-Category: Jamf Connect
+**Files & Processes**<br />
+**Execute Command:** /usr/local/bin/authchanger -reset
 
-Trigger: Custom
+<h3>Scope</h3>
 
-Custom Event: demobilizeCustomTrigger (or custom value if set in Demobilize - Trigger parameter 4)
+---
 
-Frequency: Once per computer
-
-Packages
-
-Package: JamfConnectLaunchAgent.pkg
-
-Action: Install
-
-Files & Processes
-
-Execute Command: /usr/local/bin/authchanger -reset
-
-**Scope**
-
-Targets: All Computers
-
+**Targets:** All Computers
 
 <h2>Policy 3 (Demobilize & migrate)</h2>
 
 **Payloads**
 
-General
+---
 
-Name: Demobilize - Activate Jamf Connect Login
+**General**
+**Name:** Demobilize - Activate Jamf Connect Login
+**Category:** Jamf Connect
+**Trigger:** Recurring Check-in
+**Custom Event:** demobilizeCustomTrigger
+**Frequency:** Once per computer
 
-Category: Jamf Connect
+**Packages**
+**Package:** JamfConnectLaunchAgent.pkg
+**Action:** Install
 
-Trigger: Recurring Check-in
-
-Custom Event: demobilizeCustomTrigger
-
-Frequency: Once per computer
-
-Packages
-
-Package: JamfConnectLaunchAgent.pkg
-
-Action: Install
-
-Scripts
-
-Script: Demobilize - Migrate
-
-Priority: After
+**Scripts**
+**Script:** Demobilize - Migrate
+**Priority:** After
 
 **Scope**
+
+---
 
 Targets: All Computers
 
