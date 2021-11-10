@@ -14,8 +14,8 @@ Demobilize only
 
 Demobilize & migrate
 --------------------
-<key>DemobilizeUsers</key>
-	<true/>
+'''<key>DemobilizeUsers</key>
+	<true/>'''
 <key>Migrate</key>
 	<true/>
 <key>MigrateUsersHide</key>
