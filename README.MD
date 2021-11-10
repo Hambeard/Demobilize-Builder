@@ -186,21 +186,19 @@ Targets: All Computers
 
 **Settings changed in Jamf Pro**
 
-Login hooks enabled
-
+Login hooks enabled<br />
 Check for policies at login enabled
 
 **Objects created in Jamf Pro**
 
-Jamf Connect Category
-
+Jamf Connect Category<br />
 Mobile Accounts Computer Extension Attribute
 
 Demobilize - Helper script<br />
-Demobilize - Trigger script
-Demobilize - Migrate script
-Demobilize - No Mobile Accounts Smart Group
-Demobilize - Mobile Accounts Smart Group
-Demobilize - Jamf Connect not installed Smart Group
-Demobilize - Jamf Connect installed Smart Group
-Demobilize - Jamf System Events PPPC Configuration Profile
+Demobilize - Trigger script<br />
+Demobilize - Migrate script<br />
+Demobilize - No Mobile Accounts Smart Group<br />
+Demobilize - Mobile Accounts Smart Group<br />
+Demobilize - Jamf Connect not installed Smart Group<br />
+Demobilize - Jamf Connect installed Smart Group<br />
+Demobilize - Jamf System Events PPPC Configuration Profile<br />
