@@ -38,8 +38,7 @@ You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages t
 
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
-Policy 1
---------
+<h3>Policy 1</h3>
 
 Payloads
 
@@ -61,23 +60,22 @@ Files & Processes
 Execute Command: /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
 
 Scope
------
+
 Targets: Demobilize - Jamf Connect not installed
 Exclusions: Demobilize - No Mobile Accounts
 
 Self Service
-------------
+
 Self Service Display Name: Jamf Connect
 Button Name: Install
 Description: *Jamf Connect* is a tool which helps keep your Mac password in sync with your other company passwords. The installation requires you to log out and back in again, please make sure that you have saved your work before proceeding.
 Ensure that users view the description: Checked
 Icon: It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
 
-########
-Policy 2
+<h3>Policy 2</h3>
 
 Payloads
---------
+
 General
 Name: Demobilize - Inventory update
 Category: Jamf Connect
@@ -92,15 +90,15 @@ Maintenance
 Update Inventory: Checked
 
 Scope
------
+
 Targets: Demobilize - Jamf Connect installed
 Exclusions: Demobilize - No Mobile Accounts
 
-##########################
-Policy 3 (Demobilize only)
+
+<h3>Policy 3 (Demobilize only)</h3>
 
 Payloads
---------
+
 General
 Name: Demobilize - Reset login window
 Category: Jamf Connect
@@ -116,14 +114,14 @@ Files & Processes
 Execute Command: /usr/local/bin/authchanger -reset
 
 Scope
------
+
 Targets: All Computers
 
-###############################
-Policy 3 (Demobilize & migrate)
+
+<h3>Policy 3 (Demobilize & migrate)</h3>
 
 Payloads
---------
+
 General
 Name: Demobilize - Activate Jamf Connect Login
 Category: Jamf Connect
@@ -140,20 +138,20 @@ Script: Demobilize - Migrate
 Priority: After
 
 Scope
------
+
 Targets: All Computers
 
 
-########
-Appendix
+
+<h2>Appendix</h2>
 
 Settings changed in Jamf Pro
-----------------------------
+
 Login hooks enabled
 Check for policies at login enabled
 
 Objects created in Jamf Pro
----------------------------
+
 Jamf Connect Category
 Mobile Accounts Computer Extension Attribute
 Demobilize - Helper script
