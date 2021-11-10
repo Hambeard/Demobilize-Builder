@@ -4,7 +4,7 @@ The following guide is designed to accompany the Jamf Connect demobilize workflo
 
 The workflows were designed with single-user deployments in mind. They should work for shared deployments, however testing has been limited.
 
-You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages to your Jamf Pro server prior to this workflow. You will also need to have configured your IdP settings for Jamf Connect and made them available for distribution as a configuration profile in Jamf Pro. For each workflow, you will need to include the following keys.
+You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages to your Jamf Pro server prior to this workflow. You will also need to have configured your IdP settings for Jamf Connect and made them available for distribution as a configuration profile in Jamf Pro. For each workflow, you will need to include the following keys in your Jamf Connect Login settings.
 
 <h2>Demobilize only</h2>
 
@@ -155,21 +155,18 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 ---
 
-Targets: All Computers
+**Targets:** All Computers
 
 
-<h2>Appendix</h2>
+<h1>Appendix</h1>
 
-**Settings changed in Jamf Pro**
-
+**Settings changed in Jamf Pro**<br />
 Login hooks enabled<br />
 Check for policies at login enabled
 
-**Objects created in Jamf Pro**
-
+**Objects created in Jamf Pro**<br />
 Jamf Connect Category<br />
-Mobile Accounts Computer Extension Attribute
-
+Mobile Accounts Computer Extension Attribute<br />
 Demobilize - Helper script<br />
 Demobilize - Trigger script<br />
 Demobilize - Migrate script<br />
