@@ -197,17 +197,10 @@ Jamf Connect Category
 Mobile Accounts Computer Extension Attribute
 
 Demobilize - Helper script
-
 Demobilize - Trigger script
-
 Demobilize - Migrate script
-
 Demobilize - No Mobile Accounts Smart Group
-
 Demobilize - Mobile Accounts Smart Group
-
 Demobilize - Jamf Connect not installed Smart Group
-
 Demobilize - Jamf Connect installed Smart Group
-
 Demobilize - Jamf System Events PPPC Configuration Profile
