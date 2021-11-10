@@ -51,23 +51,23 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 **Trigger:** None<br />
 **Frequency:** Once per computer
 
-Packages
-Package: JamfConnect.pkg<br />
-Action: Install
+**Packages**
+**Package:** JamfConnect.pkg<br />
+**Action:** Install
 
-Scripts<br />
-Script: Demobilize - Helper<br />
-Priority: After
+**Scripts**<br />
+**Script:** Demobilize - Helper<br />
+**Priority:** After
 
-Files & Processes<br />
-Execute Command: /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
+**Files & Processes**<br />
+**Execute Command:** /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
 
 <h3>Scope</h3>
 
 ---
 
-Targets: Demobilize - Jamf Connect not installed<br />
-Exclusions: Demobilize - No Mobile Accounts
+**Targets:** Demobilize - Jamf Connect not installed<br />
+**Exclusions:** Demobilize - No Mobile Accounts
 
 **Self Service**
 
@@ -77,34 +77,29 @@ Exclusions: Demobilize - No Mobile Accounts
 **Ensure that users view the description:** Checked<br />
 **Icon:** It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
 
-<h2>Policy 2</h2>
+<h1>Policy 2</h1>
 
-**Payloads**
+<h2>Payloads</h2>
 
-General
+---
 
-**Name:** Demobilize - Inventory update
-
-Category: Jamf Connect
-
-Trigger: Login
-
+**General**<br />
+**Name:** Demobilize - Inventory update<br />
+Category: Jamf Connect<br />
+Trigger: Login<br />
 Frequency: Ongoing
 
-Scripts
-
-Script: Demobilize - Trigger
-
-Priority: After
-
-Maintenance
-
+Scripts<br />
+Script: Demobilize - Trigger<br />
+Priority: After<br />
+Maintenance<br />
 Update Inventory: Checked
 
-**Scope**
+<h2>Scope</h2>
 
-Targets: Demobilize - Jamf Connect installed
+--
 
+Targets: Demobilize - Jamf Connect installed<br />
 Exclusions: Demobilize - No Mobile Accounts
 
 
