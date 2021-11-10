@@ -44,33 +44,47 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 **Payloads**
 
 General
+
 Name: Demobilize - Install Jamf Connect
+
 Category: Jamf Connect
+
 Trigger: None
+
 Frequency: Once per computer
 
 Packages
+
 Package: JamfConnect.pkg
+
 Action: Install
 
 Scripts
+
 Script: Demobilize - Helper
+
 Priority: After
 
 Files & Processes
+
 Execute Command: /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
 
 **Scope**
 
 Targets: Demobilize - Jamf Connect not installed
+
 Exclusions: Demobilize - No Mobile Accounts
 
 **Self Service**
 
 Self Service Display Name: Jamf Connect
+
 Button Name: Install
+
 Description: *Jamf Connect* is a tool which helps keep your Mac password in sync with your other company passwords. The installation requires you to log out and back in again, please make sure that you have saved your work before proceeding.
+
 Ensure that users view the description: Checked
+
 Icon: It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
 
 <h2>Policy 2</h2>
@@ -78,21 +92,29 @@ Icon: It is highly recommended that you add an icon for the policy, the Jamf Con
 **Payloads**
 
 General
+
 Name: Demobilize - Inventory update
+
 Category: Jamf Connect
+
 Trigger: Login
+
 Frequency: Ongoing
 
 Scripts
+
 Script: Demobilize - Trigger
+
 Priority: After
 
 Maintenance
+
 Update Inventory: Checked
 
 **Scope**
 
 Targets: Demobilize - Jamf Connect installed
+
 Exclusions: Demobilize - No Mobile Accounts
 
 
@@ -101,17 +123,25 @@ Exclusions: Demobilize - No Mobile Accounts
 **Payloads**
 
 General
+
 Name: Demobilize - Reset login window
+
 Category: Jamf Connect
+
 Trigger: Custom
+
 Custom Event: demobilizeCustomTrigger (or custom value if set in Demobilize - Trigger parameter 4)
+
 Frequency: Once per computer
 
 Packages
+
 Package: JamfConnectLaunchAgent.pkg
+
 Action: Install
 
 Files & Processes
+
 Execute Command: /usr/local/bin/authchanger -reset
 
 **Scope**
@@ -124,18 +154,27 @@ Targets: All Computers
 **Payloads**
 
 General
+
 Name: Demobilize - Activate Jamf Connect Login
+
 Category: Jamf Connect
+
 Trigger: Recurring Check-in
+
 Custom Event: demobilizeCustomTrigger
+
 Frequency: Once per computer
 
 Packages
+
 Package: JamfConnectLaunchAgent.pkg
+
 Action: Install
 
 Scripts
+
 Script: Demobilize - Migrate
+
 Priority: After
 
 **Scope**
@@ -148,17 +187,27 @@ Targets: All Computers
 **Settings changed in Jamf Pro**
 
 Login hooks enabled
+
 Check for policies at login enabled
 
 **Objects created in Jamf Pro**
 
 Jamf Connect Category
+
 Mobile Accounts Computer Extension Attribute
+
 Demobilize - Helper script
+
 Demobilize - Trigger script
+
 Demobilize - Migrate script
+
 Demobilize - No Mobile Accounts Smart Group
+
 Demobilize - Mobile Accounts Smart Group
+
 Demobilize - Jamf Connect not installed Smart Group
+
 Demobilize - Jamf Connect installed Smart Group
+
 Demobilize - Jamf System Events PPPC Configuration Profile
