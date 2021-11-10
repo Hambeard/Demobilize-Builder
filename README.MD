@@ -39,6 +39,7 @@ You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages t
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
 
+
 <h1>Policy 1</h1>
 
 <h3>Payloads</h3>
@@ -79,6 +80,8 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 **Ensure that users view the description:** Checked<br />
 **Icon:** It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
 
+
+
 <h1>Policy 2</h1>
 
 <h3>Payloads</h3>
@@ -106,6 +109,7 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 **Exclusions:** Demobilize - No Mobile Accounts
 
 
+
 <h1>Policy 3 (Demobilize only)</h1>
 
 **Payloads**
@@ -130,25 +134,27 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 **Targets:** All Computers
 
+
+
 <h1>Policy 3 (Demobilize & migrate)</h1>
 
-**Payloads**
+<h3>Payloads</h3>
 
 ---
 
-**General**
-**Name:** Demobilize - Activate Jamf Connect Login
-**Category:** Jamf Connect
-**Trigger:** Recurring Check-in
-**Custom Event:** demobilizeCustomTrigger
+**General**<br />
+**Name:** Demobilize - Activate Jamf Connect Login<br />
+**Category:** Jamf Connect<br />
+**Trigger:** Recurring Check-in<br />
+**Custom Event:** demobilizeCustomTrigger<br />
 **Frequency:** Once per computer
 
-**Packages**
-**Package:** JamfConnectLaunchAgent.pkg
+**Packages**<br />
+**Package:** JamfConnectLaunchAgent.pkg<br />
 **Action:** Install
 
-**Scripts**
-**Script:** Demobilize - Migrate
+**Scripts**<br />
+**Script:** Demobilize - Migrate<br />
 **Priority:** After
 
 **Scope**
@@ -156,6 +162,7 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 ---
 
 **Targets:** All Computers
+
 
 
 <h1>Appendix</h1>
