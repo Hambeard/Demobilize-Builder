@@ -16,7 +16,8 @@ Demobilize only
 
 Demobilize & migrate
 --------------------
-'''<key>DemobilizeUsers</key>
+```xml
+<key>DemobilizeUsers</key>
 	<true/>'''
 <key>Migrate</key>
 	<true/>
@@ -34,6 +35,7 @@ Demobilize & migrate
 	</array>
 <key>LocalFallback</key>
 	<true/>
+```
 
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
