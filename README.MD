@@ -9,8 +9,10 @@ You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages t
 
 Demobilize only
 ---------------
+'''xml
 <key>DemobilizeUsers</key>
 	<true/>
+'''
 
 Demobilize & migrate
 --------------------
