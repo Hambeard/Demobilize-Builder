@@ -81,23 +81,24 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 <h1>Policy 2</h1>
 
-<h2>Payloads</h2>
+<h3>Payloads</h3>
 
 ---
 
 **General**<br />
 **Name:** Demobilize - Inventory update<br />
-Category: Jamf Connect<br />
-Trigger: Login<br />
-Frequency: Ongoing
+**Category:** Jamf Connect<br />
+**Trigger:** Login<br />
+**Frequency:** Ongoing
 
-Scripts<br />
-Script: Demobilize - Trigger<br />
-Priority: After<br />
-Maintenance<br />
+**Scripts**<br />
+**Script:** Demobilize - Trigger<br />
+**Priority:** After<br />
+
+**Maintenance**<br />
 Update Inventory: Checked
 
-<h2>Scope</h2>
+<h3>Scope</h3>
 
 --
 
