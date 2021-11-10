@@ -43,48 +43,34 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 **Payloads**
 
-General
-
-Name: Demobilize - Install Jamf Connect
-
-Category: Jamf Connect
-
-Trigger: None
-
+General<br />
+Name: Demobilize - Install Jamf Connect<br />
+Category: Jamf Connect<br />
+Trigger: None<br />
 Frequency: Once per computer
 
 Packages
-
-Package: JamfConnect.pkg
-
+Package: JamfConnect.pkg<br />
 Action: Install
 
-Scripts
-
-Script: Demobilize - Helper
-
+Scripts<br />
+Script: Demobilize - Helper<br />
 Priority: After
 
-Files & Processes
-
+Files & Processes<br />
 Execute Command: /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
 
 **Scope**
 
-Targets: Demobilize - Jamf Connect not installed
-
+Targets: Demobilize - Jamf Connect not installed<br />
 Exclusions: Demobilize - No Mobile Accounts
 
 **Self Service**
 
-Self Service Display Name: Jamf Connect
-
-Button Name: Install
-
-Description: *Jamf Connect* is a tool which helps keep your Mac password in sync with your other company passwords. The installation requires you to log out and back in again, please make sure that you have saved your work before proceeding.
-
-Ensure that users view the description: Checked
-
+Self Service Display Name: Jamf Connect<br />
+Button Name: Install<br />
+Description: *Jamf Connect* is a tool which helps keep your Mac password in sync with your other company passwords. The installation requires you to log out and back in again, please make sure that you have saved your work before proceeding.<br />
+Ensure that users view the description: Checked<br />
 Icon: It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
 
 <h2>Policy 2</h2>
