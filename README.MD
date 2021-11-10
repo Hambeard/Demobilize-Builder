@@ -121,7 +121,7 @@ Targets: All Computers
 <h2>Policy 3 (Demobilize & migrate)</h2>
 
 
-<h4>Payloads</h4>
+<h3>Payloads</h3>
 
 General
 Name: Demobilize - Activate Jamf Connect Login
