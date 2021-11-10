@@ -1,5 +1,4 @@
 <h1>Jamf Connect demobilization and/or migration workflow builder</h1>
--------------------------------------------------------------
 
 The following guide is designed to accompany the Jamf Connect demobilize workflow builder script. Please run this script prior to following the steps in this guide. There are two workflows detailed here, Demobilize only and Demobilize & migrate. If you would prefer the standard macOS login screen use Demobilize only. Otherwise if you wish to use the Jamf Connect Login window, use the Demobilize & migrate workflow.
 
@@ -7,14 +6,14 @@ The workflows were designed with single-user deployments in mind. They should wo
 
 You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages to your Jamf Pro server prior to this workflow. You will also need to have configured your IdP settings for Jamf Connect and made them available for distribution as a configuration profile in Jamf Pro. For each workflow, you will need to include the following keys.
 
-Demobilize only
+<h3>Demobilize only</h3>
 ---------------
 ```xml
 <key>DemobilizeUsers</key>
 	<true/>
 ```
 
-Demobilize & migrate
+<h3>Demobilize & migrate</h3>
 --------------------
 ```xml
 <key>DemobilizeUsers</key>
