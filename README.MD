@@ -6,14 +6,14 @@ The workflows were designed with single-user deployments in mind. They should wo
 
 You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages to your Jamf Pro server prior to this workflow. You will also need to have configured your IdP settings for Jamf Connect and made them available for distribution as a configuration profile in Jamf Pro. For each workflow, you will need to include the following keys.
 
-<h3>Demobilize only</h3>
+<h2>Demobilize only</h2>
 
 ```xml
 <key>DemobilizeUsers</key>
 	<true/>
 ```
 
-<h3>Demobilize & migrate</h3>
+<h2>Demobilize & migrate</h2>
 
 ```xml
 <key>DemobilizeUsers</key>
@@ -39,9 +39,9 @@ You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages t
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
 
-<h2>Policy 1</h2>
+<h1>Policy 1</h1>
 
-<h3>Payloads</h3>
+<h2>Payloads</h2>
 
 **General**<br />
 **Name:** Demobilize - Install Jamf Connect<br />
