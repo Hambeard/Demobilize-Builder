@@ -196,7 +196,7 @@ Jamf Connect Category
 
 Mobile Accounts Computer Extension Attribute
 
-Demobilize - Helper script
+Demobilize - Helper script<br />
 Demobilize - Trigger script
 Demobilize - Migrate script
 Demobilize - No Mobile Accounts Smart Group
