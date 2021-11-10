@@ -121,7 +121,7 @@ Targets: All Computers
 <h2>Policy 3 (Demobilize & migrate)</h2>
 
 
-<h3>Payloads</h3>
+*Payloads*
 
 General
 Name: Demobilize - Activate Jamf Connect Login
@@ -138,7 +138,7 @@ Scripts
 Script: Demobilize - Migrate
 Priority: After
 
-<h4>Scope</h4>
+*Scope*
 
 Targets: All Computers
 
