@@ -1,4 +1,4 @@
-Jamf Connect demobilization and/or migration workflow builder
+<h1>Jamf Connect demobilization and/or migration workflow builder</h1>
 -------------------------------------------------------------
 
 The following guide is designed to accompany the Jamf Connect demobilize workflow builder script. Please run this script prior to following the steps in this guide. There are two workflows detailed here, Demobilize only and Demobilize & migrate. If you would prefer the standard macOS login screen use Demobilize only. Otherwise if you wish to use the Jamf Connect Login window, use the Demobilize & migrate workflow.
@@ -18,7 +18,7 @@ Demobilize & migrate
 --------------------
 ```xml
 <key>DemobilizeUsers</key>
-	<true/>'''
+	<true/>
 <key>Migrate</key>
 	<true/>
 <key>MigrateUsersHide</key>
@@ -39,11 +39,11 @@ Demobilize & migrate
 
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
-########
 Policy 1
+--------
 
 Payloads
---------
+
 General
 Name: Demobilize - Install Jamf Connect
 Category: Jamf Connect
