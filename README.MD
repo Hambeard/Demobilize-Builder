@@ -130,7 +130,7 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 **Targets:** All Computers
 
-<h2>Policy 3 (Demobilize & migrate)</h2>
+<h1>Policy 3 (Demobilize & migrate)</h1>
 
 **Payloads**
 
