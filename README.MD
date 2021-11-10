@@ -69,7 +69,9 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 **Targets:** Demobilize - Jamf Connect not installed<br />
 **Exclusions:** Demobilize - No Mobile Accounts
 
-**Self Service**
+<h3>Self Service</h3>
+
+---
 
 **Self Service Display Name:** Jamf Connect<br />
 **Button Name:** Install<br />
