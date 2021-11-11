@@ -40,9 +40,10 @@ You will need to configure your IdP settings for Jamf Connect and make them avai
 
 * Prepare your Jamf Connect Login and Jamf Connect Menu Bar settings configuration profiles
 * Upload JamfConnect.pkg and JamfConnectLaunchAgent.pkg to your distribution point
-* Download the entire repo to your Mac (Code > Download ZIP)
-* Run from the command line e.g. `sh /PATH/TO/SCRIPT`<br />
-	* Ensure the entire repo is intact, the build script needs the other scripts present to work correctly<br />
+	* You can download the latest Jamf Connect DMG from [account.jamf.com](https://account.jamf.com)
+* Download the entire [Demobilize-Builder](https://github.com/Hambeard/Demobilize-Builder) repo to your Mac (Code > Download ZIP)
+* Run Jamf Connect demobilize workflow builder.sh from the command line e.g. `sh /PATH/TO/SCRIPT`
+	* Ensure the entire repo is intact, the build script needs the other scripts present to work correctly
 	* Ensure that terminal has TCC access to the location you are running the build script from
 * After the workflow is built in Jamf Pro
 	* Customize the script parameter values in the policy Demobilize - Install Jamf Connect if desired
