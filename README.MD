@@ -147,7 +147,7 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 **General**<br />
 **Name:** Demobilize - Activate Jamf Connect Login<br />
 **Category:** Jamf Connect<br />
-**Trigger:** Recurring Check-in<br />
+**Trigger:** Custom<br />
 **Custom Event:** demobilizeCustomTrigger<br />
 **Frequency:** Once per computer
 
