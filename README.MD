@@ -1,5 +1,10 @@
 <h1>Jamf Connect demobilization and/or migration workflow builder</h1>
 
+
+* Download the entire repo to your Mac
+* Run from the command line e.g. sh /PATH/TO/SCRIPT
+* Make sure the entire repo is intact, the build script needs the other scripts present to work correctly
+
 The following guide is designed to accompany the Jamf Connect demobilize workflow builder script. Please run this script prior to following the steps in this guide. There are two workflows detailed here, Demobilize only and Demobilize & migrate. If you would prefer the standard macOS login screen use Demobilize only. Otherwise if you wish to use the Jamf Connect Login window, use the Demobilize & migrate workflow.
 
 The workflows were designed with single-user deployments in mind. They should work for shared deployments, however testing has been limited.
