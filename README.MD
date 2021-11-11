@@ -1,7 +1,6 @@
 <h1>Jamf Connect demobilization and/or migration workflow builder</h1>
 
-It is recommended that you read and understand the workflow detailed in the following link
-https://docs.jamf.com/technical-articles/Demobilizing_and_Unbinding_Mobile_Accounts_with_Jamf_Connect_and_Jamf_Pro.html
+It is recommended that you read and understand the workflow detailed in [Demobilizing and Unbinding Mobile Accounts with Jamf Connect and Jamf Pro](https://docs.jamf.com/technical-articles/Demobilizing_and_Unbinding_Mobile_Accounts_with_Jamf_Connect_and_Jamf_Pro.html)
 
 There are two workflows detailed here, Demobilize only and Demobilize & migrate. If you would prefer the standard macOS login screen use Demobilize only. Otherwise if you wish to use the Jamf Connect Login window, use the Demobilize & migrate workflow.
 
