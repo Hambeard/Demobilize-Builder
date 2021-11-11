@@ -10,7 +10,8 @@
 * After the workflow is built in Jamf Pro
 	* Customize the script parameter values in the policy Demobilize - Install Jamf Connect if desired
 	* Add JamfConnect.pkg to the policy Demobilize - Install Jamf Connect
-	* Add JamfConnectLaunchAgent.pkg to the policy Demobilize - Reset login window
+	* Add JamfConnectLaunchAgent.pkg to the policy Demobilize - Reset login window or 
+	Demobilize - Activate Jamf Connect Login depending on your chosen workflow
 	* Scope the configuration profile "Demobilize - Jamf System Events PPPC" to target the Smart Group "Demobilize - Jamf Connect installed"
 * Test!
 
