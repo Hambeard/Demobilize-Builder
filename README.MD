@@ -57,18 +57,34 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 <h1>Appendix</h1>
 
-**Settings changed in Jamf Pro**<br />
-Login hooks enabled<br />
-Check for policies at login enabled
+**Objects & settings created/modified in Jamf Pro**<br />
+Settings
+* Login hooks enabled<br />
+* Check for policies at login enabled
 
-**Objects created in Jamf Pro**<br />
-Jamf Connect Category<br />
-Mobile Accounts Computer Extension Attribute<br />
-Demobilize - Helper script<br />
-Demobilize - Trigger script<br />
-Demobilize - Migrate script<br />
-Demobilize - No Mobile Accounts Smart Group<br />
-Demobilize - Mobile Accounts Smart Group<br />
-Demobilize - Jamf Connect not installed Smart Group<br />
-Demobilize - Jamf Connect installed Smart Group<br />
-Demobilize - Jamf System Events PPPC Configuration Profile<br />
+Categories
+* Jamf Connect Category
+
+Extension Attributes
+* Mobile Accounts Computer Extension Attribute
+
+Scripts
+* Demobilize - Helper script
+* Demobilize - Trigger script
+* Demobilize - Migrate script
+
+Smart Groups
+* Demobilize - No Mobile Accounts Smart Group
+* Demobilize - Mobile Accounts Smart Group
+* Demobilize - Jamf Connect not installed Smart Group
+* Demobilize - Jamf Connect installed Smart Group
+
+Configuration profiles
+* Demobilize - Jamf System Events PPPC Configuration Profile
+
+Policies
+* Demobilize - Install Jamf Connect
+* Demobilize - Inventory update
+* Demobilize - Reset login window
+* Demobilize - Activate Jamf Connect Login
+
