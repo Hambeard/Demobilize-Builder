@@ -2,7 +2,7 @@
 
 
 * Download the entire repo to your Mac (Code > Download ZIP)
-* Run from the command line e.g. sh /PATH/TO/SCRIPT
+* Run from the command line e.g. sh /PATH/TO/SCRIPT<br />
 Make sure the entire repo is intact, the build script needs the other scripts present to work correctly<br />
 Make sure that terminal has TCC access to the location you are running the build script from
 * Once all components are present in Jamf Pro, customize the script parameter values and add the Jamf Connect packages as directed below
