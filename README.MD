@@ -1,18 +1,22 @@
 <h1>Jamf Connect demobilization and/or migration workflow builder</h1>
 
 
+* Prepare your Jamf Connect Login and Jamf Connect Menu Bar settings configuration profiles
+* Upload JamfConnect.pkg and JamfConnectLaunchAgent.pkg to your distribution point
 * Download the entire repo to your Mac (Code > Download ZIP)
 * Run from the command line e.g. `sh /PATH/TO/SCRIPT`<br />
 	* Make sure the entire repo is intact, the build script needs the other scripts present to work correctly<br />
 	* Make sure that terminal has TCC access to the location you are running the build script from
-* Once all components are present in Jamf Pro, customize the script parameter values and add the Jamf Connect packages as directed below
+* After the workflow is built in Jamf Pro
+	* Customize the script parameter values in the policy Demobilize - Install Jamf Connect if desired
+	* Add JamfConnect.pkg to the policy Demobilize - Install Jamf Connect
+	* Add JamfConnectLaunchAgent.pkg to the policy Demobilize - Reset login window
+	* Scope the configuration profile "Demobilize - Jamf System Events PPPC" to target the Smart Group "Demobilize - Jamf Connect installed"
 * Test!
 
-The following guide is designed to accompany the Jamf Connect demobilize workflow builder script. Please run this script prior to following the steps in this guide. There are two workflows detailed here, Demobilize only and Demobilize & migrate. If you would prefer the standard macOS login screen use Demobilize only. Otherwise if you wish to use the Jamf Connect Login window, use the Demobilize & migrate workflow.
+There are two workflows detailed here, Demobilize only and Demobilize & migrate. If you would prefer the standard macOS login screen use Demobilize only. Otherwise if you wish to use the Jamf Connect Login window, use the Demobilize & migrate workflow.
 
-The workflows were designed with single-user deployments in mind. They should work for shared deployments, however testing has been limited.
-
-You will need upload the JamfConnect.pkg & JamfConnectLaunchAgent.pkg packages to your Jamf Pro server prior to this workflow. You will also need to have configured your IdP settings for Jamf Connect and made them available for distribution as a configuration profile in Jamf Pro. For each workflow, you will need to include the following keys in your Jamf Connect Login settings.
+You will also need to have configured your IdP settings for Jamf Connect and made them available for distribution as a configuration profile in Jamf Pro. For each workflow, you will need to include the following keys in your Jamf Connect Login settings.
 
 <h2>Demobilize only</h2>
 
@@ -48,130 +52,6 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 
 
 
-<h1>Policy 1</h1>
-
-<h3>Payloads</h3>
-
----
-
-**General**<br />
-**Name:** Demobilize - Install Jamf Connect<br />
-**Category:** Jamf Connect<br />
-**Trigger:** None<br />
-**Frequency:** Once per computer
-
-**Packages**
-**Package:** JamfConnect.pkg<br />
-**Action:** Install
-
-**Scripts**<br />
-**Script:** Demobilize - Helper<br />
-**Priority:** After
-
-**Files & Processes**<br />
-**Execute Command:** /usr/local/bin/authchanger -reset -preAuth JamfConnectLogin:DeMobilize,privileged
-
-<h3>Scope</h3>
-
----
-
-**Targets:** Demobilize - Jamf Connect not installed<br />
-**Exclusions:** Demobilize - No Mobile Accounts
-
-<h3>Self Service</h3>
-
----
-
-**Self Service Display Name:** Jamf Connect<br />
-**Button Name:** Install<br />
-**Description:** *Jamf Connect* is a tool which helps keep your Mac password in sync with your other company passwords. The installation requires you to log out and back in again, please make sure that you have saved your work before proceeding.<br />
-**Ensure that users view the description:** Checked<br />
-**Icon:** It is highly recommended that you add an icon for the policy, the Jamf Connect icon is included for convenience.
-
-
-
-<h1>Policy 2</h1>
-
-<h3>Payloads</h3>
-
----
-
-**General**<br />
-**Name:** Demobilize - Inventory update<br />
-**Category:** Jamf Connect<br />
-**Trigger:** Login<br />
-**Frequency:** Ongoing
-
-**Scripts**<br />
-**Script:** Demobilize - Trigger<br />
-**Priority:** After<br />
-
-**Maintenance**<br />
-**Update Inventory:** Checked
-
-<h3>Scope</h3>
-
----
-
-**Targets:** Demobilize - Jamf Connect installed<br />
-**Exclusions:** Demobilize - No Mobile Accounts
-
-
-
-<h1>Policy 3 (Demobilize only)</h1>
-
-**Payloads**
-
----
-
-**General**<br />
-**Name:** Demobilize - Reset login window<br />
-**Category:** Jamf Connect<br />
-**Trigger:** Custom<br />
-**Custom Event:** demobilizeCustomTrigger (or custom value if set in Demobilize - Trigger parameter 4)<br />
-**Frequency:** Once per computer
-
-**Packages**<br />
-**Package:** JamfConnectLaunchAgent.pkg<br />
-**Action:** Install
-
-**Files & Processes**<br />
-**Execute Command:** /usr/local/bin/authchanger -reset
-
-<h3>Scope</h3>
-
----
-
-**Targets:** All Computers
-
-
-
-<h1>Policy 3 (Demobilize & migrate)</h1>
-
-<h3>Payloads</h3>
-
----
-
-**General**<br />
-**Name:** Demobilize - Activate Jamf Connect Login<br />
-**Category:** Jamf Connect<br />
-**Trigger:** Custom<br />
-**Custom Event:** demobilizeCustomTrigger<br />
-**Frequency:** Once per computer
-
-**Packages**<br />
-**Package:** JamfConnectLaunchAgent.pkg<br />
-**Action:** Install
-
-**Scripts**<br />
-**Script:** Demobilize - Migrate<br />
-**Priority:** After
-
-**Scope**
-
----
-
-**Targets:** All Computers
 
 
 
