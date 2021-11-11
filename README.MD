@@ -58,6 +58,7 @@ If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 
 <h1>Appendix</h1>
 
 **Objects & settings created/modified in Jamf Pro**<br />
+
 Settings
 * Login hooks enabled<br />
 * Check for policies at login enabled
