@@ -5,7 +5,7 @@ https://docs.jamf.com/technical-articles/Demobilizing_and_Unbinding_Mobile_Accou
 
 There are two workflows detailed here, Demobilize only and Demobilize & migrate. If you would prefer the standard macOS login screen use Demobilize only. Otherwise if you wish to use the Jamf Connect Login window, use the Demobilize & migrate workflow.
 
-You will need to configure your IdP settings for Jamf Connect and make them available for distribution as configuration profiles in Jamf Pro. For each workflow, you will need to include the following keys in your Jamf Connect Login settings in addition to the other settings.
+You will need to configure your IdP settings for Jamf Connect and make them available for distribution as configuration profiles in Jamf Pro. For each workflow, you will need to include the following keys in your Jamf Connect Login settings in addition to the other settings. Please reference the Jamf Connect Documentation for further information about configuring Jamf Connect. https://www.jamf.com/resources/product-documentation/jamf-connect-administrators-guide/
 
 <h2>Demobilize only</h2>
 
