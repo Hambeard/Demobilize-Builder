@@ -51,10 +51,6 @@ You will also need to have configured your IdP settings for Jamf Connect and mad
 If you wish to use Jamf Connect Login on a continuing basis please use Policy 3 (demobilize & migrate) instead of Policy 3 (demobilize). If you are only looking to demobilize and do not wish to use Jamf Connect Login please use Policy 3 (demobilize).
 
 
-
-
-
-
 <h1>Appendix</h1>
 
 **Objects & settings created/modified in Jamf Pro**<br />
