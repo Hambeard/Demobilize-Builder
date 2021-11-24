@@ -65,15 +65,16 @@ You will need to configure your IdP settings for Jamf Connect and make them avai
 	* Add JamfConnect.pkg to the policy Demobilize - Install Jamf Connect
 	* Add JamfConnectLaunchAgent.pkg to the policy Demobilize - Reset login window or Demobilize - Activate Jamf Connect Login depending on your chosen workflow
 	* Scope the configuration profile "Demobilize - Jamf System Events PPPC" to target the Smart Group "Demobilize - Jamf Connect installed"
+	* Enable the Demobilize policies
 * Test!
 
 
 <h1>Appendix</h1>
 
-**Objects & settings created/modified in Jamf Pro**<br />
+**Objects & settings created/modified in Jamf Pro**
 
 Settings
-* Login hooks enabled<br />
+* Login hooks enabled
 * Check for policies at login enabled
 
 Categories
@@ -93,10 +94,10 @@ Smart Groups
 * Demobilize - Jamf Connect not installed Smart Group
 * Demobilize - Jamf Connect installed Smart Group
 
-Configuration profiles
+Configuration profiles (unscoped by default)
 * Demobilize - Jamf System Events PPPC Configuration Profile
 
-Policies
+Policies (not enabled by default)
 * Demobilize - Install Jamf Connect
 * Demobilize - Inventory update
 * Demobilize - Reset login window
