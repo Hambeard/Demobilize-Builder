@@ -607,7 +607,7 @@ resultPolicy1=$( curl -H "Content-Type: application/xml" \
 <policy>
 	<general>
 		<name>Demobilize - Install Jamf Connect</name>
-		<enabled>true</enabled>
+		<enabled>false</enabled>
 		<trigger>USER_INITIATED</trigger>
 		<frequency>Once per computer</frequency>
 		<category>
@@ -687,7 +687,7 @@ resultPolicy2=$( curl -H "Content-Type: application/xml" \
 <policy>
 	<general>
 		<name>Demobilize - Inventory update</name>
-		<enabled>true</enabled>
+		<enabled>false</enabled>
 		<trigger>EVENT</trigger>
 		<trigger_login>true</trigger_login>
 		<frequency>Ongoing</frequency>
@@ -750,7 +750,7 @@ resultPolicy3=$( curl -H "Content-Type: application/xml" \
 <policy>
 	<general>
 		<name>Demobilize - Reset login window</name>
-		<enabled>true</enabled>
+		<enabled>false</enabled>
 		<trigger>EVENT</trigger>
 		<trigger_other>demobilizeCustomTrigger</trigger_other>
 		<frequency>Ongoing</frequency>
@@ -794,7 +794,7 @@ resultPolicy3=$( curl -H "Content-Type: application/xml" \
 <policy>
 	<general>
 		<name>Demobilize - Activate Jamf Connect Login</name>
-		<enabled>true</enabled>
+		<enabled>false</enabled>
 		<trigger>EVENT</trigger>
 		<trigger_other>demobilizeCustomTrigger</trigger_other>
 		<frequency>Ongoing</frequency>
