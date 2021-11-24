@@ -1,6 +1,6 @@
 <h1>Jamf Connect demobilization and/or migration workflow builder</h1>
 
-License information
+<h3>License information</h3>
 
 Copyright 2021
 
