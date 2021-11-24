@@ -39,6 +39,7 @@ You will need to configure your IdP settings for Jamf Connect and make them avai
 <h1>How to use</h1>
 
 * Prepare your Jamf Connect Login and Jamf Connect Menu Bar settings configuration profiles
+	* Scope the configuration profiles to target computers
 * Upload JamfConnect.pkg and JamfConnectLaunchAgent.pkg to your distribution point
 	* You can download the latest Jamf Connect DMG from [account.jamf.com](https://account.jamf.com)
 * Download the entire [Demobilize-Builder](https://github.com/Hambeard/Demobilize-Builder) repo to your Mac (Code > Download ZIP)
